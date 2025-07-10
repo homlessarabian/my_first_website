@@ -1,0 +1,185 @@
+/* Base styles */
+:root {
+  --bg-light: #f8f6f3;
+  --text-light: #222;
+  --accent-light: #85714d;
+
+  --bg-dark: #1e1e1e;
+  --text-dark: #eaeaea;
+  --accent-dark: #d1b87e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg-light);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* Nav styles */
+.nav {
+  background: white;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+body.dark-mode .nav {
+  background: #2c2c2c;
+  border-bottom: 1px solid #444;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 600;
+}
+
+body.dark-mode nav a {
+  color: var(--text-dark);
+}
+
+nav button {
+  background: var(--accent-light);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body.dark-mode nav button {
+  background: var(--accent-dark);
+}
+
+/* Section spacing */
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+body.dark-mode section {
+  border-color: #333;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  color: var(--accent-light);
+}
+
+body.dark-mode h1, 
+body.dark-mode h2 {
+  color: var(--accent-dark);
+}
+
+/* List */
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+/* Contact form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background: #2c2c2c;
+  color: var(--text-dark);
+  border-color: #555;
+}
+
+button[type="submit"] {
+  background: var(--accent-light);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode button[type="submit"] {
+  background: var(--accent-dark);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #777;
+}
+
+#game input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+body.dark-mode #game input {
+  background: #2c2c2c;
+  color: white;
+  border-color: #555;
+}
+
+#game button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: var(--accent-light);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body.dark-mode #game button {
+  background: var(--accent-dark);
+}
+
+#gameResult {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+body.dark-mode footer {
+  color: #aaa;
+}

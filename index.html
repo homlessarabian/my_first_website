@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohammed's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#contact">Contact</a>
+      <button id="modeToggle">Toggle Dark Mode</button>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="container">
+      <h1 id="greeting">Hello, I am Mohammed</h1>
+      <p>This is my first website.</p>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I like eating kabsa, and computer science - Mr.Eesa</p>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section id="hobbies">
+    <div class="container">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Basketball</li>
+        <li>Coding, video games, and looking for new restaurants</li>
+      </ul>
+    </div>
+  </section>
+
+<!-- Game Section -->
+<section id="game">
+  <div class="container">
+    <h2>Mini Game: Guess the Number</h2>
+    <p>I'm thinking of a number between 1 and 100.</p>
+    <input type="number" id="userGuess" placeholder="Enter your guess" min="1" max="10">
+    <button onclick="checkGuess()">Guess</button>
+    <p id="gameResult"></p>
+    <button onclick="resetGame()" id="resetBtn" style="display:none;">Play Again</button>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Your email" required />
+        <textarea name="message" placeholder="Your message..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="formResponse"></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Mohammed's Portfolio
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
